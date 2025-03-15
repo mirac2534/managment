@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Start the automatic update timer
-        ScheduledUpdater.startScheduler();
+        // If you only want the data to change when the application is running, you can use this class
+        // ScheduledUpdater.startScheduler();
 
         Scanner scanner = new Scanner(System.in);
 
