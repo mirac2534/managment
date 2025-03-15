@@ -2,7 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // Start the automatic update timer
+        ScheduledUpdater.startScheduler();
+
         Scanner scanner = new Scanner(System.in);
+
+        // Update data in profile and department files
+        ProfileUpdater.updateWorkDays();
         boolean profileExists = Profile.profileExists();  // Checks if there is any profile in the file
 
         if (!profileExists) {
