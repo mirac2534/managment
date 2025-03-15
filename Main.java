@@ -76,6 +76,13 @@ public class Main {
                             currentProfile.getSalary(), currentProfile.getDate(), currentProfile.getSubDate()
                     ).startMenu();
                     break;
+                    case "IT":
+                    new personal_IT(
+                            currentProfile.getName(), currentProfile.getLastName(), currentProfile.getTC(),
+                            currentProfile.getDepartment(), currentProfile.getPassword(), currentProfile.getID(),
+                            currentProfile.getSalary(), currentProfile.getDate(), currentProfile.getSubDate()
+                    ).startMenu();
+                    break;
                 default:
                     System.out.println("Error: Unknown department '" + currentProfile.getDepartment() + "'!");
                     break;
