@@ -94,7 +94,7 @@ This method shows the person's own personal information.
 	private void displayDepartmentProfiles()
 This method shows the name, surname, employment date and number of years of employment of all personnel in the department to which the person belongs.
 ## 7-**ProfileUpdater class**
-This class is for automatically updating the working time from the files of the general staff and the department to which it belongs. It is defined in the Jar file and automatically updates the working time at 21.00 every day thanks to the Task Scheduler. 
+This class is for automatically updating the working time from the files of the general staff and the department to which it belongs. It is defined in the bat file and automatically updates the working time at 21.00 every day thanks to the Task Scheduler. 
 ### 7-1-  updateWorkDays Method
     public static void updateWorkDays()
 This method updates the working time of all personnel.
