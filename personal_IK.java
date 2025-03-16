@@ -174,7 +174,7 @@ public class personal_IK extends Profile.Profilee {
         System.out.print("Enter the ID of the personnel to be deleted: ");
         String userID = scanner.nextLine().trim();
 
-        String departmentFile = "C:\\Users\\durma\\Videos\\java\\çalışmalarım\\management\\managment\\departments\\department/" + userDepartment + ".txt";
+        String departmentFile = DEPARTMENT_FOLDER + "\\" + userDepartment + ".txt";
 
         File file = new File(departmentFile);
         if (!file.exists()) {
@@ -210,7 +210,7 @@ public class personal_IK extends Profile.Profilee {
         }
 
         String[] files = {
-                "C:\\Users\\durma\\Videos\\java\\çalışmalarım\\management\\managment\\profile.txt",
+                PROFILE_FILE,
                 departmentFile
         };
 
